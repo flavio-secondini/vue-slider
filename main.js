@@ -9,6 +9,11 @@ var app = new Vue ({
       "https://static.euronews.com/articles/stories/04/97/98/10/1440x810_cmsv2_9446b8f9-0634-5f1d-94ab-f3fa5fef911a-4979810.jpg"
     ]
   },
+  // created: function () {
+  //   setInterval(function (next) {
+  //     this.next()
+  //   }, 3000)
+  // },
   methods: {
 
     next: function () {
@@ -25,6 +30,10 @@ var app = new Vue ({
       } else {
         this.index--
       }
+    },
+
+    dotSelect: function (index) {
+      this.index = index
     }
 
   }

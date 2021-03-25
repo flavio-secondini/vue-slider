@@ -20,7 +20,7 @@
       <div class="imgs">
         <img :src="immagini[index]" alt="">
         <div class="dots">
-          <i v-for="dot in immagini.length" class="fas fa-circle" :class="(dot - 1 == index) ? 'active' : '' "></i>          
+          <i v-for="dot in immagini.length" class="fas fa-circle" :class="(dot - 1 == index) ? 'active' : '' " @click="dotSelect(dot - 1)"></i>          
         </div>
       </div>
       <div class="next" @click="next">
