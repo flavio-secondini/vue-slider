@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.prev, .next {
+  padding: 30px;
+  font-size: 30px;
+}
+
+.imgs {
+  text-align: center;
+}
+
+img {
+  width: 600px;
+  height: auto;
+  padding: 10px 0;
+}
+
+.dots i {
+  color: gray;
+  padding: 10px;
+}
+
+.dots .active {
+  color: blue;
+}
